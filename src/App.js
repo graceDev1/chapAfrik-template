@@ -5,6 +5,7 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import InternShip from './components/internship/internship.component';
 import Join from './components/join/join.component';
 import Member from './components/member/member.component';
+import ReadyJoin from './components/readyJoin/readyJoin.component';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <InternShip/>
         <Join/>
         <Member/>
+        <ReadyJoin/>
       </div>
       </div>
     </Router>
