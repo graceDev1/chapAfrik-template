@@ -6,7 +6,7 @@ function JoinItem({comment}) {
         <div className="col-xs-6 col-md-4 mt-4 text-center">
              <CheckCircleIcon
              style={{
-                 fontSize:'60px'
+                 fontSize:'50px'
              }}
             className="joinUsItem__icon"
             />

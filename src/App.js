@@ -4,6 +4,7 @@ import Banner from './components/banner/banner.component';
 import {BrowserRouter as Router} from 'react-router-dom';
 import InternShip from './components/internship/internship.component';
 import Join from './components/join/join.component';
+import Member from './components/member/member.component';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="container">
         <InternShip/>
         <Join/>
+        <Member/>
       </div>
       </div>
     </Router>
