@@ -1,0 +1,43 @@
+.banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.banner::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-image: url(../../assets/images/christina.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+}
+
+
+.banner__info{
+    position: relative;
+    text-align: center;
+    color: #f3f3f3;
+}
+
+.banner__info > div{
+    margin-top: 10px;
+}
+
+.btn-danger{
+    margin: 10px  !important;
+    padding: 10px 40px !important;
+    background-color: #FF220C !important;
+    border: none !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    border-radius: 5% !important;
+    cursor: pointer !important;
+}
