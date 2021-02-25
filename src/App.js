@@ -3,6 +3,7 @@ import Header from './components/header/header.component';
 import Banner from './components/banner/banner.component';
 import {BrowserRouter as Router} from 'react-router-dom';
 import InternShip from './components/internship/internship.component';
+import Join from './components/join/join.component';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Banner/>
       <div className="container">
         <InternShip/>
+        <Join/>
       </div>
       </div>
     </Router>
