@@ -1,11 +1,25 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import { Link } from 'react-router-dom';
 import './header.component.css';
 import ChapAfrik from '../../assets/images/ChapAfrik.png';
 
-function header() {
+function Header() {
+    const [show, handleShow] = useState(false);
+
+    useEffect(()=>{
+        window.addEventListener("scroll", ()=>{
+            if(window.scrollY > 100){
+                handleShow(true);
+            }
+            else handleShow(false)
+        });
+        return () =>{
+            window.removeEventListener("scroll");
+        }
+    }, []); 
+
     return (
-    <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav className={`navbar navbar-expand-lg navbar-light fixed-top ${show && "nav__white"}`}>
         <div className="container-fluid">
             <Link className="navbar-brand" to="#">
             <img
@@ -34,4 +48,4 @@ function header() {
     )
 }
 
-export default header
+export default Header
