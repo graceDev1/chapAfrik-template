@@ -1,11 +1,12 @@
 import React from 'react'
-import {} from 'react-router-dom';
+import { Link} from 'react-router-dom';
+import ChapAfrik from '../../assets/images/ChapAfrik.png';
 
 function Footer() {
     return (
         // <!-- Footer -->
         // <!-- Footer -->
-        <footer className="page-footer font-small indigo bg-dark text-whie">
+        <footer className="page-footer font-small indigo bg-dark mt-4">
         
           {/* <!-- Footer Links --> */}
           <div className="container text-center text-md-left">
@@ -17,21 +18,18 @@ function Footer() {
               <div className="col-md-3 mx-auto">
         
                 {/* <!-- Links --> */}
-                <h5 className="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                <img 
+                src={ChapAfrik}
+                alt="logo2"
+                style={{
+                    width:'120px',
+                    objectFit:'contain'
+                }}
+                className="navbar-brand mt-3 mb-4"
+                />
         
                 <ul className="list-unstyled">
-                  <li>
-                    <Link to="#!">Very long link 1</Link>
-                  </li>
-                  <li>
-                    <Link to="#!">Very long link 2</Link>
-                  </li>
-                  <li>
-                    <Link to="#!">Very long link 3</Link>
-                  </li>
-                  <li>
-                    <Link to="#!">Very long link 4</Link>
-                  </li>
+                  
                 </ul>
         
               </div>
@@ -43,21 +41,19 @@ function Footer() {
               <div className="col-md-3 mx-auto">
         
                 {/* <!-- Links --> */}
-                <h5 className="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                <h5 className="font-weight-bold text-white text-white mt-3 mb-2">Our Community</h5>
         
                 <ul className="list-unstyled">
                   <li>
-                    <Link to="#!">Link 1</Link>
+                    <Link className="nav-link text-white" to="#">About us</Link>
                   </li>
                   <li>
-                    <Link to="#!">Link 2</Link>
+                    <Link className="nav-link text-white" to="#">Meet our Team</Link>
                   </li>
                   <li>
-                    <Link to="#!">Link 3</Link>
+                    <Link className="nav-link text-white" to="#">Contact us</Link>
                   </li>
-                  <li>
-                    <Link to="#!">Link 4</Link>
-                  </li>
+                  
                 </ul>
         
               </div>
@@ -69,21 +65,19 @@ function Footer() {
               <div className="col-md-3 mx-auto">
         
                 {/* <!-- Links --> */}
-                <h5 className="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                <h5 className="font-weight-bold text-white mt-3 mb-2">The Intership</h5>
         
                 <ul className="list-unstyled">
                   <li>
-                    <Link to="#!">Link 1</Link>
+                    <Link className="nav-link text-white" to="#">About</Link>
                   </li>
                   <li>
-                    <Link to="#!">Link 2</Link>
+                    <Link className="nav-link text-white" to="#">Apply Now</Link>
                   </li>
                   <li>
-                    <Link to="#!">Link 3</Link>
+                    <Link className="nav-link text-white" to="#">Terms & policy</Link>
                   </li>
-                  <li>
-                    <Link to="#!">Link 4</Link>
-                  </li>
+                 
                 </ul>
         
               </div>
@@ -95,20 +89,20 @@ function Footer() {
               <div className="col-md-3 mx-auto">
         
                 {/* <!-- Links --> */}
-                <h5 className="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                <h5 className="font-weight-bold text-white  mt-3 mb-2">Get in touch</h5>
         
                 <ul className="list-unstyled">
                   <li>
-                    <Link to="#!">Link 1</Link>
+                    <Link className="nav-link text-white" to="#">Email us</Link>
                   </li>
                   <li>
-                    <Link to="#!">Link 2</Link>
+                    <Link className="nav-link text-white" to="#">Twitter</Link>
                   </li>
                   <li>
-                    <Link to="#!">Link 3</Link>
+                    <Link className="nav-link text-white" to="#">Instagram</Link>
                   </li>
                   <li>
-                    <Link to="#!">Link 4</Link>
+                    <Link className="nav-link text-white" to="#">Slack</Link>
                   </li>
                 </ul>
         
@@ -122,8 +116,8 @@ function Footer() {
           {/* <!-- Footer Links --> */}
         
           {/* <!-- Copyright --> */}
-          <div className="footer-copyright text-center py-3">© 2020 Copyright:
-            <Link to="https://mdbootstrap.com/"> MDBootstrap.com</Link>
+          <div className="footer-copyright text-white py-3"> 
+          <p className="ml-4 text-white">© 2021 ChapAfrik. All Rights Reserved</p> 
           </div>
           {/* <!-- Copyright --> */}
         
